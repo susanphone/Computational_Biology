@@ -80,18 +80,31 @@ the change of genome by sudden
 NOTE:can occur in DNA, RNA, and proteins
 
 ### Central Dogma
-how we get the protein from the gene. Known as \u{Gene expession}
+how we get the protein from the gene. Known as **Gene expession**
 #### Transcription - DNA -> RNA
+* DNA T->U RNA
+* Done within the nucleus
 #### Translation - RNA -> protein
+* Done outside the nucleus
+* Rybosomes
+* **Codons**: every three letters stands for one of the 20 letter alphabet
+    * 4 letter alphabet to 20 letter alphabet
+    * Genetic code tables exist to decode this
+    * ATG start codon
+    * TAA, TAG, TGA stop codons
 #### Modification done to the protein
-    4 letter alphabet to 20 letter alphabet
-        every three letters stands for one of the 20 letter alphabet
-    Genetic code tables exist to decode this
+    
+## Gene Structure
+* Gene has 4 regions
+    * Coding region : contains the codons for protein
+    * mRNA transcript : 
+        * 5 feet untranslate region
+        * 3 feet untranslated region
+    * Regulatory region
 
-### Problem: Find all occurrences of P in T
-you have a very long string known as text (t)
-a shorter string known as pattern (p)
-    len(T) = n
-    len(P) = m
+### Introns and Exons
 
+
+
+    
 
