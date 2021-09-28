@@ -1,0 +1,27 @@
+String S and T
+Scores G,L, and H
+G for global Scores
+L for semi-global Scores
+    Use the smith-waterman algorithm or brute force
+H for alignment with beginning space of S and ending space of T
+
+Prove or Disprove the Statement $L \geq H \geq G$
+
+In the book p41, we know the semi-global greater than global
+
+S=ATCCGAACATCCAATCGAAGC
+T=AGCATGCAT
+
+ATCCGAACATCCAATCGAAGC
+A---G--CATGCAAT------
+
+global score = 6
+semi-global score = 14
+local score = 14
+therefore this is true
+
+The local score finds the longest common subsequence
+semi-global adds a "-" at the end, so it's easy to align the strings
+Global has to make it the same length using insertions and deletions,
+and since the are more mismatches than matches,
+global alignment scores lower that the others

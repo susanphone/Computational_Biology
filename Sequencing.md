@@ -7,7 +7,7 @@
     * Example:
         * Similar to most of the other restriction enzymes, GAATTC is a palindrome
     * EcoR1 is cut between G and A. **Sticky ends** are created
-        * Nite that some restriction enzymes give rise to **blunt ends** instead of sticky ends
+        * Note that some restriction enzymes give rise to **blunt ends** instead of sticky ends
 * Shotgun Method: Break the DNA molecule into small pieces randomly
     * Method:
         * Have a solution having a large amount of purified ????      
