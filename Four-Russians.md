@@ -34,7 +34,7 @@ The function is going to take the special block and only look at the values of t
 * $3^{2t} |\Sigma|^{2t} \times t^2$
 * => $O(n(\log(n)^2))$ 
 
-* $t = \log_{3|\Sigma|}n / 2$
+* $t = \log_{2|\Sigma|}n / 2$
 
 ### Theorem:
 Edit distance can be computed in $O(\frac{n^2}{\log(n)})$ time or $O(n^2/\log^2 n)$ time (*in unit-cost RAM model*)

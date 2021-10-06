@@ -1,0 +1,77 @@
+Y-Algorithm
+    inexact pattern matching
+    order of letters does not matter, only the counts matter
+    C = C_M {A C T G}, C_M are the counts of each letter
+    Time : O(m + |Sum| + n)
+
+Z-Algorithm
+    Assume we have a fast black box to compute Z values for any string
+        O(n) time
+    Used for pattern matching
+    Z value can be greater than m
+        because of the $. $ never occurs in T
+    use previous values to compute the next value
+    Z boxes can overlap
+    Time: O(n)
+
+Alignment: 
+    Uses scoring functions
+    
+    Local: substring whose alignment has the highest score
+        no mismatch allowed, in/del allowed
+        Brute Force Solution
+    
+    Global: make same length using in/del. 
+    
+    Semi-Global: Ignore spaces in beginning of S and ending spaces of t
+    
+    Needle-Wunsch Algorithm
+        Time/Space: O(nm)
+    
+    Simth-Waterford Algorithm
+        use of recursion for global alignment
+    
+    Edit Distance   
+        Four Russians Algorithm
+            Time: O(n log(n)^2)   
+            Solve block by block instead of cell by cell
+    * Speed: only need to compute the values based on the total number of in/del allowed in the problem
+    * Space:
+        dynamic programming requires a lot of space $O(mn)$
+        we know two rows and store the arrows, but we don't want to store the arrows in every cell.
+        Every time we divide and conquer, we reduce the matrix by half, until the path is complete
+            1. first scan is $mn$
+            2. second scan is $1/2 mn$
+            3. $(1/2)^2 mn$
+        => $2mn$
+        Given O(m+n) we can recover alignment through recursion
+    
+Suffix Tree
+    Time: to build - O(n^2), to search(n log n)
+    Applications:
+        exact pattern matching
+        longest common substring    
+            internal node shared with at least two strings
+        finding Palindromes
+        Generalized suffix trees
+            longest common substring
+            exact string matching
+            longest repeated substring     
+    Properties:
+        Suffix links
+    Using Prefix:
+        Palindromes
+            Longest Common Prefix(LCP)
+                lowest common ancestor
+            not just the longest, but all Palindromes
+Suffix Arrays
+    sorted suffixes of n indices
+    Applications:
+        exact pattern matching
+        SA Binary Search
+        Binary Search with LCP
+
+
+
+
+

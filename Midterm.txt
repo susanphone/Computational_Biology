@@ -1,0 +1,44 @@
+Suffix Tree 
+    Possible Question: Construction
+    Space and Time
+    POssible Question: Applications
+    
+Suffix Array 
+    Search Algorithms
+    Construction
+    Space and Time
+Z-algorithm
+    Time
+Multiset Matching 
+Y-algorithm
+    Time
+Exact Pattern Matching
+Sequencing
+Alignment
+    Needleman-Wunsch
+    Smith-Waterman
+    Four Russians Speed Up
+    Linear Space Idea
+    Global
+    Semi-Global
+    Local
+    Edit Distance
+        can be solved with dynamic programming
+        one if mismatch, zero for match
+        Possible Question: How many solutions are there?
+        Find at least 1 solution
+Basic Biology
+    How a protein is made(transcription and translation)
+
+Chapter 1
+Chapter 2
+Chapter 3-3.4
+Four Russians Notes
+
+Exam Format:
+5-6 problems that are like the homework problems
+    * Simple Proofs if any
+    * Running times
+
+
+    

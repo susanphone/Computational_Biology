@@ -1,12 +1,12 @@
 # Suffix Trees
 * "trie" -> retreival
 * Key-values
-* You have a set of key that are strings and you want to store these
-* This can see if the string is stored or not
-* Each edge of the tree reps one letter
+* You have a set of keys that are strings and you want to store these
+* Suffix Trees can see if the string is stored or not
+* Each edge of the tree represents one letter
 * Tries are quick to search for strings
 * End of string could still be part of the middle of another string
-* make an array the length of the alphBET, that reps that array of children
+* make an array the length of the alphabet, that represents that array of children
 
 * we are only using the suffixes, the ends of the strings
 
@@ -101,5 +101,46 @@
 
 ### Finding Palindromes
 * given a string, what's the longest palindrome it contains
+
+$O(n \log n)$ bits to write down each indices
+
+## Property of Suffix Tree
+every path to a node in a suffix tree is labeled 
+* there must be another node in the suffix tree that is just $p$
+* can follow path $p$ to another node
+* **Suffix Links** can link nodes together from different branches
+    * Only needed for internal nodes
+    * Useful, but non-trivial
+
+## Generalized Suffix Tree
+* Building a suffix tree for two or more strings
+* Are we reaching a leaf in the first or second string?
+* **Longest Common Substring Problem**
+    * max link that two strings have in common
+    1. build generalized suffix tree
+    2. find the depth of all nodes
+    * if an internal node has two different color kids, that means string g will occur in both strings
+        * a suffix position from the different strings
+        * look for internal node that have the same thing from s1 and s2
+    3. determine the color set for all internal nodes
+    4. Report longest common substring from deepest multi-colored node
+    * Step 1: Linear O(n)
+    * Step 2: Linear O(n)
+    * Step 3: Linear O(n)
+    * Step 4: Linear O(n)
+
+* Linear Time $O(n)$
+## Exact String Matching Problem
+* Take string S and build suffix tree
+* find all places were the pattern matches
+* Improvement from z-algo because if the pattern changes, you have to rerun the pattern, where as here you just search for the new query from the same suffix tree.
+* We find all occurrences of the pattern, not just one occurrence
+
+## Longest Repeated Substring Problem
+* find the deepest internal node
+* Time Linear $O(n)$
+
+
+
 
 

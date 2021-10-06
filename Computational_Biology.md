@@ -42,7 +42,7 @@ Body -> organs -> tissue -> cells
 ### DNA (ACTG)
 * Adenine
 * Guanine
-* Thymine
+* Thymine 
 * Cytosine
 * Uracil - shows up in RNA T -> U
 
