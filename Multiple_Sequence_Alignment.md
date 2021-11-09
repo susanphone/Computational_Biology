@@ -55,3 +55,32 @@ minimizes Sum-of-Pair distance
 * Find a string $S_c$
 * Align all other strings with respect to $S_c$
 
+## Multiple Sequence Alignment (Continued)
+        input: S1, S2,...,  Sk
+
+        S' = Si plus some gaps
+        |S'1| = |S'2| = ... = |S'k|
+
+        SOP - score
+        SOP - distance
+
+* SOP - $dist(M) = \sum_{1 \leq i < j \leq k} dist_M(S'_i, S'_j)$ 
+* distance $/delta(x,y) = ?$
+    * $\delta(x,x) = 0$
+    * $\delta(-,-) = 0$
+* $\sum_{l=1}^n \delta(S'_i[l], S'_j[l])$
+* Can switch the order of sums 
+* Fact: $D_M$ satisfies the triangle-inequality
+    * Suppose X, Y, Z are sequences in M
+            
+            M:  -----X------
+                -----Y------
+                -----Z------
+    * $D_M(X,Y) \leq D_M(X,Z) + D_M(Z,Y)$
+        * $D_M(X,Y) = \delta(X[l], Y[l])$
+        * $D_M(X,Z) = \delta(X[l], Z[l])$
+        * $D_M(Z,Y) = \delta(Z[l], Y[l])$
+    * Assume $\delta$ has this property
+        * $\delta(-,-) = 0$
+        * $\delta(x,x) = 0$
+
