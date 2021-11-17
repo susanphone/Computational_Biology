@@ -37,8 +37,8 @@ Define $V(i,j)$ be the maximum score of the global alignment of A and B over
 * $ V(i,j) = max
     \begin{cases}
         V(i-1,j-1) + \delta(S[i],T[j]) & \\
-        V(i-1,j) + \delta(S[i], _)  &\\
-        V(i, j-1) + \delta(_,T[j])
+        V(i-1,j) + \delta(S[i], -)  &\\
+        V(i, j-1) + \delta(-,T[j])
     \end{cases}$
 ## Problem on Space
 * Note that the dynamic programming requires a lot of space $O(mn)$
